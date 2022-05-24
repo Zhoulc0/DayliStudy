@@ -54,8 +54,8 @@ function test() {
 
         (function (j){
             arr[j] = function () {
-                
-            
+
+        
                 console.log(j);
             }
         }(i))
