@@ -64,25 +64,48 @@
 // muAdd();
 
 
-function test() {
-    var food = 'apple';
-    var obj = {
-        eatFood : function (){
-            if(food != "") {
-                console.log("I am eating" + food);
-                food = "";
-            }else{
-                console.log("There is nothing! empty!");
-            }
-        },
-        pushFood : function (myFood) {
-            food = myFood;
-        }
+
+// a = 100;
+// function deno(e) {
+//     function e() {}
+//         arguments[0] = 2;
+//         console.log(e);
+//         if(a) {
+//             var b = 123;
+//             function c(){
+
+//             }
+//         }
+//         var c;
+//         a = 10;
+//         var a;
+//         console.log(b);
+//         f = 123;
+//         console.log(c);
+//         console.log(a);
+// }
+// var a;
+// deno(1);
+// console.log(a);
+// console.log(f);
+
+
+
+var f = (
+    function f(){
+        return "1";
+    },
+    function g() {
+        return 2;
     }
-    return obj;
+)();
+console.log(typeof f);
+
+
+
+
+var x = 1;
+if(function f() {}){
+    x += typeof f;
 }
-var person =test();
-person.eatFood();
-person.eatFood();
-person.pushFood('banana');
-person.eatFood();
+console.log(x);
